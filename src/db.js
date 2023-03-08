@@ -24,10 +24,10 @@ export const pool = createPool({
   database: DB_DATABASE
 });
 
-pool.getConnection((error, connection) => {
-  if (error) {
-    console.error('Error de conexión: ' + error.stack);
-    return;
-  }
-  console.log('Conexión establecida con el ID: ' + connection.threadId);
-});
+// pool.getConnection((error, connection) => {
+//   if (error) {
+//     console.error('Error de conexión: ' + error.stack);
+//     return;
+//   }
+//   console.log('Conexión establecida con el ID: ' + connection.threadId);
+// });
