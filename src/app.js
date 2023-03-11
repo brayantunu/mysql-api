@@ -4,7 +4,7 @@ import index from "./router/index-router.js"
 const app = Express()
 
 app.use(Express.json())
-app.use('/api',employes)
+app.use(employes)
 app.use(index)
 
 app.use((req,res,next) => {
