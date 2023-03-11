@@ -5,7 +5,7 @@ const app = Express()
 
 app.use(Express.json())
 app.use('/api',employes)
-app.use('/',index)
+app.use(index)
 
 app.use((req,res,next) => {
     res.status(400).json({message: 'pagina no encontrada'
