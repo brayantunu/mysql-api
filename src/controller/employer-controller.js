@@ -1,5 +1,6 @@
 import { pool } from "../db.js";
 
+
 export const getempoyes = async (req, res) => {
   const [rows] = await pool.query("SELECT * FROM employe");
   res.json(rows);
